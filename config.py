@@ -10,14 +10,14 @@ API_ID = int(os.environ.get("API_ID", ""))
 API_HASH = os.environ.get("API_HASH", "")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "6299192020"))
-DB_URL = os.environ.get("DB_URL", "")
-DB_NAME = os.environ.get("DB_NAME", "Tecfreaktamil")
+OWNER_ID = int(os.environ.get("OWNER_ID", "5048967308"))
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://luckydrive501:<luckydrive501>@luckydrive500.tf9isen.mongodb.net/?appName=Luckydrive500")
+DB_NAME = os.environ.get("DB_NAME", "sbfile")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003094784222"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002727057163"))
 
-FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1003056865925"))
+FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "0"))
 
 FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "0"))
 
@@ -37,8 +37,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 try:
-    ADMINS=[6299192020 ,6016699737, 5000956033]
-    for x in (os.environ.get("ADMINS", "6299192020").split()):
+    ADMINS=[6299192020 ,5048967308, 5000956033]
+    for x in (os.environ.get("ADMINS", "5048967308").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -75,7 +75,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "𝐒𝐨𝐫𝐫𝐲 {first} Yo
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6299192020)
+ADMINS.append(5048967308)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
